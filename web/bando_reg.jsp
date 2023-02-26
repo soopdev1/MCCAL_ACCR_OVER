@@ -1,7 +1,8 @@
-<%@page import="com.seta.action.Constant"%>
-<%@page import="com.seta.action.ActionB"%>
+<%@page import="rc.soop.util.GoogleRecaptcha"%>
+<%@page import="rc.soop.action.Constant"%>
+<%@page import="rc.soop.action.ActionB"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="com.seta.entity.Registrazione"%>
+<%@page import="rc.soop.entity.Registrazione"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -13,13 +14,13 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>YES I START UP CALABRIA - Donne e Disoccupati</title>
+        <title><%=Constant.titlepro%></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="assets/seta/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
+        <link href="assets/soop/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
 
         <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -52,10 +53,10 @@
         <link rel="shortcut icon" href="favicon.ico" /> 
 
         <!--<script src="https://www.google.com/recaptcha/api.js"></script>-->
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lfr-eMUAAAAACNdFH7tsZvaVg9gGOrCl0Wj_FW3"></script>
-    <script id="registration" src="assets/seta/js/Registration.js" data-context="<%=request.getContextPath()%>" data-gKey="6Lfr-eMUAAAAACNdFH7tsZvaVg9gGOrCl0Wj_FW3" type="text/javascript"></script>
-        <script src="assets/seta/js/jscontrolli.js"></script>
-        <script src="assets/seta/js/validate.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=<%=GoogleRecaptcha.SITE_KEY%>"></script>
+        <script id="registration" src="assets/soop/js/Registration.js" data-context="<%=request.getContextPath()%>" data-gKey="<%=GoogleRecaptcha.SITE_KEY%>" type="text/javascript"></script>
+        <script src="assets/soop/js/jscontrolli.js"></script>
+        <script src="assets/soop/js/validate.min.js"></script>
         <script type="text/javascript">
             <%
                 String bando = request.getParameter("bando");
@@ -208,7 +209,7 @@
                 return false;
             }
             function submitfor() {
-                
+
                 document.forms["formregist"].submit();
             }
         </script>
@@ -278,13 +279,12 @@
                             <div class="col-md-6"><center>
                                     <table>
                                         <tr>
-                                            <td><img src="assets/seta/img/Cattura.PNG" alt="" height="74px" /></td>
-                                            
+                                            <td><img src="assets/soop/img/LOGHI3.png" alt="" height="95px" /></td>
                                         </tr>
                                     </table>
                                 </center> 
                             </div>
-                            <div class="col-md-3" style="text-align: right;"><img src="assets/seta/img/logo_blue_1.png" alt="logo" height="74px" class="img-responsivelogo"/></div> 
+                            <div class="col-md-3" style="text-align: right;"><img src="assets/soop/img/logo_blue_1.png" alt="logo" height="74px" class="img-responsivelogo"/></div> 
                         </div>                         
                     </div>
 
@@ -521,7 +521,7 @@
     <script src="assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script src="assets/seta/js/select2.full.min.js" type="text/javascript"></script>
+    <script src="assets/soop/js/select2.full.min.js" type="text/javascript"></script>
     <script src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
@@ -533,14 +533,14 @@
     <script src="assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
     <script src="assets/pages/scripts/components-bootstrap-select.min.js" type="text/javascript"></script>
     <script src="assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
-    <script src="assets/seta/js/form-input-mask.min.js" type="text/javascript"></script>
+    <script src="assets/soop/js/form-input-mask.min.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL SCRIPTS -->
     <script src="assets/pages/scripts/components-bootstrap-select.min.js" type="text/javascript"></script>
     <!-- BEGIN THEME LAYOUT SCRIPTS -->
     <script src="assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
     <script src="assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
     <!-- END THEME LAYOUT SCRIPTS -->
-    
+
 
 
     <!-- BEGIN THEME GLOBAL SCRIPTS -->

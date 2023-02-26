@@ -4,13 +4,14 @@
     Author     : rcosco
 --%>
 
-<%@page import="com.seta.entity.Domandecomplete"%>
-<%@page import="com.seta.entity.Docbandi"%>
-<%@page import="com.seta.entity.Docuserbandi"%>
+<%@page import="rc.soop.action.Constant"%>
+<%@page import="rc.soop.entity.Domandecomplete"%>
+<%@page import="rc.soop.entity.Docbandi"%>
+<%@page import="rc.soop.entity.Docuserbandi"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="com.seta.action.Liste"%>
-<%@page import="com.seta.action.ActionB"%>
-<%@page import="com.seta.util.Utility"%>
+<%@page import="rc.soop.action.Liste"%>
+<%@page import="rc.soop.action.ActionB"%>
+<%@page import="rc.soop.util.Utility"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -21,13 +22,13 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>YES I START UP CALABRIA - Donne e Disoccupati</title>
+        <title><%=Constant.titlepro%></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="assets/seta/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
+        <link href="assets/soop/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
 
         <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -219,11 +220,11 @@
                     <!-- BEGIN PAGE TITLE-->
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="page-title">Carica documenti</h3>
+                            <h3 class="page-title"><%=Constant.titlepro%> - Carica documenti</h3>
                         </div>
                         <div class="col-md-6" style="text-align: right;">
-                            <img src="assets/seta/img/Cattura.PNG" alt="logo" height="70px"/>
-                            <img src="assets/seta/img/logo_blue_1.png" alt="logo" height="70px"/>
+                            <img src="assets/soop/img/LOGHI3.png" alt="logo" height="70px"/>
+                            <img src="assets/soop/img/logo_blue_1.png" alt="logo" height="70px"/>
                         </div>
                     </div>
 
@@ -374,7 +375,7 @@
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
         <div class="page-footer">
-            <div class="page-footer-inner"> YES I START UP CALABRIA - Donne e Disoccupati v. 1.0.0</div>
+            <div class="page-footer-inner"> ><%=Constant.titlepro%> v. 1.0.0</div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
             </div>
@@ -396,7 +397,7 @@
         <script src="assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
         <!-- END CORE PLUGINS -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <script src="assets/seta/js/select2.full.min.js" type="text/javascript"></script>
+        <script src="assets/soop/js/select2.full.min.js" type="text/javascript"></script>
         <script src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL PLUGINS -->
         <!-- BEGIN THEME GLOBAL SCRIPTS -->
@@ -408,7 +409,7 @@
         <script src="assets/global/plugins/bootstrap-select/js/bootstrap-select.min.js" type="text/javascript"></script>
         <script src="assets/pages/scripts/components-bootstrap-select.min.js" type="text/javascript"></script>
         <script src="assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
-        <script src="assets/seta/js/form-input-mask.min.js" type="text/javascript"></script>
+        <script src="assets/soop/js/form-input-mask.min.js" type="text/javascript"></script>
         <!-- END PAGE LEVEL SCRIPTS -->
         <script src="assets/pages/scripts/components-bootstrap-select.min.js" type="text/javascript"></script>
         <!-- BEGIN THEME LAYOUT SCRIPTS -->

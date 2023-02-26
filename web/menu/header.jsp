@@ -23,7 +23,7 @@
             <ul class="nav navbar-nav pull-right">
                 <li class="dropdown dropdown-user">
                     <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <img alt="" class="img-circle" src="assets/seta/img/av3.png" />
+                        <img alt="" class="img-circle" src="assets/soop/img/av3.png" />
                         <span class="username username-hide-on-mobile"><%="Utente: "+session.getAttribute("username")%></span>
                         <!--<i class="fa fa-angle-down"></i>-->
                     </a>

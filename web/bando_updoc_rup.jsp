@@ -1,11 +1,12 @@
-<%@page import="com.seta.entity.Domandecomplete"%>
-<%@page import="com.seta.entity.Docuserbandi"%>
-<%@page import="com.seta.entity.Docbandi"%>
-<%@page import="com.seta.action.ActionB"%>
-<%@page import="com.seta.util.Utility"%>
+<%@page import="rc.soop.action.Constant"%>
+<%@page import="rc.soop.entity.Domandecomplete"%>
+<%@page import="rc.soop.entity.Docuserbandi"%>
+<%@page import="rc.soop.entity.Docbandi"%>
+<%@page import="rc.soop.action.ActionB"%>
+<%@page import="rc.soop.util.Utility"%>
 <!DOCTYPE html>
 <%@page import="java.util.ArrayList"%>
-<%@page import="com.seta.action.Label"%>
+<%@page import="rc.soop.action.Label"%>
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -16,7 +17,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
         <meta charset="utf-8"/>
-        <title>por04.lavorocalabria.it</title>
+        <title><%=Constant.titlepro%></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
         <meta content="" name="description"/>

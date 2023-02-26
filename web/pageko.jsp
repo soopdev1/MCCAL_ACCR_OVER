@@ -1,3 +1,4 @@
+<%@page import="rc.soop.action.Constant"%>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -8,13 +9,13 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>YES I START UP CALABRIA - Donne e Disoccupati</title>
+        <title><%=Constant.titlepro%></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="assets/seta/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
+        <link href="assets/soop/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -43,7 +44,7 @@
             <div class="col-md-12 page-404">
                 <div class="details">
                     <center>
-                        <img src="assets/seta/img/logo_blue_1.png" alt="logo" height="150px" />
+                        <img src="assets/soop/img/logo_blue_1.png" alt="logo" height="150px" />
                     </center>
                 </div>
             </div>

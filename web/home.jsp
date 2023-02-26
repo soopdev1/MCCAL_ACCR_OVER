@@ -1,5 +1,5 @@
-<%@page import="com.seta.action.Label"%>
-<%@page import="com.seta.action.Constant"%>
+<%@page import="rc.soop.action.Label"%>
+<%@page import="rc.soop.action.Constant"%>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -10,13 +10,13 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>YES I START UP CALABRIA - Donne e Disoccupati</title>
+        <title><%=Constant.titlepro%></title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
         <meta content="" name="author" />
         <!-- BEGIN GLOBAL MANDATORY STYLES -->
-        <link href="assets/seta/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
+        <link href="assets/soop/fontg/fontsgoogle1.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -47,7 +47,7 @@
     <body class=" login" onload="sel();">
         <!-- BEGIN LOGO -->
         <div class="logo">
-            <img src="assets/seta/img/logo_blue_1.png" alt="" height="150"/>
+            <img src="assets/soop/img/logo_blue_1.png" alt="" height="150"/>
         </div>
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->
@@ -103,11 +103,11 @@
         </div>
         <div class="copyright"> 
             <div>
-                <strong> <img src="assets/seta/img/Adobe-PDF-Document-icon.png" alt=""/>                         
+                <strong> <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt=""/>                         
                     <a class="" href="Download?action=guida" target="_blank" /> Guida all'utilizzo della piattaforma
                 </strong>
                 <br/><br/>
-                <strong> <img src="assets/seta/img/Adobe-PDF-Document-icon.png" alt=""/>                         
+                <strong> <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt=""/>                         
                     <a class="" href="Download?action=guidaConvenzioni" target="_blank" /> Guida per la gestione della documentazione di accreditamento
                 </strong>
             </div>
@@ -115,11 +115,11 @@
             <center>
                 <table>
                     <tr>
-                        <td><img src="assets/seta/img/LOGHI2.png" alt="" height="54px" /></td>
+                        <td><img src="assets/soop/img/LOGHI3.png" alt="" height="54px" /></td>
                         <!--
-                        <td><img src="assets/seta/img/tes1t.png" alt="" height="45px" width="45px"/></td>
-                        <td><img src="assets/seta/img/LogoRegCal.gif" alt="" height="45px" width="45px"/></td>
-                        <td><img src="assets/seta/img/Immagine.png" alt="" height="45px" width="45px"/></td>
+                        <td><img src="assets/soop/img/tes1t.png" alt="" height="45px" width="45px"/></td>
+                        <td><img src="assets/soop/img/LogoRegCal.gif" alt="" height="45px" width="45px"/></td>
+                        <td><img src="assets/soop/img/Immagine.png" alt="" height="45px" width="45px"/></td>
                         -->
                     </tr>
                 </table>
