@@ -63,7 +63,7 @@ public class Db_Bando {
 
         String user = rb.getString("db.user");
         String password = rb.getString("db.pass");
-        String host = rb.getString("db.host") + ":3306/bandoi9";
+        String host = rb.getString("db.host") + ":3306/" + rb.getString("db.name");
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
@@ -75,7 +75,7 @@ public class Db_Bando {
             p.put("useSSL", "false");
             p.put("connectTimeout", "1000");
             p.put("useUnicode", "true");
-            p.put("serverTimezone", "UTC");
+            p.put("serverTimezone", "Europe/Rome");
             p.put("zeroDateTimeBehavior", "convertToNull");
             this.c = DriverManager.getConnection("jdbc:mysql://" + host, p);
         } catch (Exception ex) {
