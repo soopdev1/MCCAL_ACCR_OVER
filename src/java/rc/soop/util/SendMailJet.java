@@ -26,6 +26,7 @@ import org.apache.commons.io.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import rc.soop.action.ActionB;
+import static rc.soop.action.ActionB.getPath;
 import rc.soop.action.Constant;
 import static rc.soop.action.Constant.rb;
 
@@ -79,6 +80,12 @@ public class SendMailJet {
             } else {
                 ccj.put(new JSONObject().put("Email", "")
                         .put("Name", ""));
+            }
+
+            try {
+                ccn.put(new JSONObject().put("Email", getPath("mail.bcc"))
+                        .put("Name", ""));
+            } catch (Exception ee1) {
             }
 
             JSONObject mail = new JSONObject().put(Emailv31.Message.FROM, new JSONObject()
