@@ -103,13 +103,14 @@
         </div>
         <div class="copyright"> 
             <div>
-                <strong> <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt=""/>                         
-                    <a class="" href="Download?action=guida" target="_blank" /> Guida all'utilizzo della piattaforma
-                </strong>
+                <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt=""/>                         
+                <a class="" href="Download?action=guida" target="_blank" ><b> Guida all'utilizzo della piattaforma</b></a>
                 <br/><br/>
-                <strong> <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt=""/>                         
-                    <a class="" href="Download?action=guidaConvenzioni" target="_blank" /> Guida per la gestione della documentazione di accreditamento
-                </strong>
+                <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt="" />                         
+                <a class="" href="Download?action=guidaConvenzioni" target="_blank" ><b> Guida per la gestione della documentazione di accreditamento</b></a>
+                <br/><br/>
+                <img src="assets/soop/img/Adobe-PDF-Document-icon.png" alt=""/>                         
+                <a class="" href="Download?action=privacyweb" target="_blank" > <b>Privacy Policy Web</b></a>
             </div>
             <br>
             <center>

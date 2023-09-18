@@ -563,6 +563,34 @@ public class Download extends HttpServlet {
             redirect(request, response, "page_fnf.html");
         }
     }
+    
+    protected void privacyweb(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        Db_Bando dbb = new Db_Bando();
+        String filePath = dbb.getPath("path.privacy");
+        dbb.closeDB();
+        File downloadFile = new File(filePath);
+        if (downloadFile.exists()) {
+            FileInputStream inStream = new FileInputStream(downloadFile);
+            String mimeType = Files.probeContentType(downloadFile.toPath());
+            if (mimeType == null) {
+                mimeType = "application/octet-stream";
+            }
+            response.setContentType(mimeType);
+            String headerKey = "Content-Disposition";
+            String headerValue = String.format("inline; filename=\"%s\"", downloadFile.getName());
+            response.setHeader(headerKey, headerValue);
+            OutputStream outStream = response.getOutputStream();
+            byte[] buffer = new byte[4096 * 4096];
+            int bytesRead = -1;
+            while ((bytesRead = inStream.read(buffer)) != -1) {
+                outStream.write(buffer, 0, bytesRead);
+            }
+            inStream.close();
+            outStream.close();
+        } else {
+            redirect(request, response, "page_fnf.html");
+        }
+    }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) {
 
@@ -578,6 +606,9 @@ public class Download extends HttpServlet {
             }
             if (action.equals("avviso")) {
                 avvisobando(request, response);
+            }
+            if (action.equals("privacyweb")) {
+                privacyweb(request, response);
             }
             if (request.getSession().getAttribute("username") == null) {
                 redirect(request, response, "home.jsp");

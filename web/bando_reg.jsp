@@ -1,3 +1,4 @@
+<%@page import="rc.soop.db.Db_Bando"%>
 <%@page import="rc.soop.util.GoogleRecaptcha"%>
 <%@page import="rc.soop.action.Constant"%>
 <%@page import="rc.soop.action.ActionB"%>
@@ -297,6 +298,9 @@
                         //String descbando = ActionB.getDescrizioneBando(bando);
                         String descbandoB = ActionB.getDescrizioneBando("temp");
                         boolean attivo = ActionB.verificaBando(bando);
+                        Db_Bando dbb = new Db_Bando();
+                        String privacy = dbb.getPath("path.privacy.testo");
+                        dbb.closeDB();
                         String es = request.getParameter("esito");
                         if (es != null) {
                             String msg = "";
@@ -462,13 +466,14 @@
                             <div class="col-md-12">
                                 <div class="form-body">
                                     <div class="form-group text-justify">
-                                        <label>Privacy <span style="color: red;">*</span></label>
+                                        <a href="Download?action=privacyweb" target="_blank" >Privacy <span style="color: red;">*</span></a>
                                         <div class="md-checkbox">
                                             <input type="checkbox" name="privacy1" id="privacy1" class="md-checkbox" /> 
                                             <label for="privacy1">
                                                 <span></span>
                                                 <span class="check"></span>
-                                                <span class="box"></span> ai sensi dell'art. 13, del D.Lgs n. 196/2003, recante "Codice in materia di protezione dei dati personali", l'Amministrazione utilizzerà i dati acquisiti, esclusivamente per le finalità relative all'Avviso Pubblico per il quale gli stessi vengono comunicati, secondo le modalità previste dalle leggi e dai regolamenti vigenti.
+                                                <span class="box"></span> 
+                                                <%=privacy%>
                                             </label>
                                         </div>
                                     </div>
