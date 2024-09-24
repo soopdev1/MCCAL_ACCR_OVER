@@ -6,7 +6,7 @@
 package rc.soop.otp;
 
 import static org.apache.commons.lang3.RandomStringUtils.randomNumeric;
-import static rc.soop.otp.SMS_MJ.sendSMS2022;
+import static rc.soop.otp.SMS_SINCH.sendSMS2024;
 
 /**
  *
@@ -25,7 +25,7 @@ public class OTP {
 
         String out;
         if (es1) {
-            if (sendSMS2022(numero, msg + " " + otp)) {
+            if (sendSMS2024(numero, msg + " " + otp)) {
                 out = "SUCCESS";
             } else {
                 out = "KO SMS";
